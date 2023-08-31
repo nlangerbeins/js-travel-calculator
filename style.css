@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/img/1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #ffffa5;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 650px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    flex: 1;
+    text-align: right;
+}
+
+.header_logo img {
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    flex: 4;
+    font-size: 60px;
+    text-align: center;
+    color: #042504;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px 0;
+}
+
+/*--------------Section Total Trip Allowance-------*/
+
+.section_total {
+    padding: 20px 20px;
+}
+
+.input_title {
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color: #074207;;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5px;
+}
+
+.input_box p {
+    margin: 0 0 2px;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #074207;
+    outline: none;
+    caret-color: #074207;
+    color: #074207;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.input::placeholder {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color: #074207;
+}
+
+/*--------------Section Travel Expenses-------*/
+
+.section_travel {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_box {
+    width: 49%;
+}
+
+/*--------------Budget Breakdown-------*/
+
+.section_budget {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+.budget_total {
+    padding: 10px;
+    margin: 0 0 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0a6;
+    border-radius: 10px;
+    color: #074207;
+
+}
+
+.budget_difference {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #093809;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.budget_title {
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.budget_number {
+    font-size: 46px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+/*---------------------Footer---------------------------*/
+
+footer {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    background-color: #c4b74a;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+footer button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+footer:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease-in-out;
+}
+
+footer img {
+    width: 30px;
+}
+
+footer span {
+    padding: 0 10px;
+}
+
+/*-----------max-width: px--------*/
+@media all and (max-width: 680px) {
+    body {
+        margin: 0 10px;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    .wrapper {
+        margin: 10px auto 20px;
+    }
+}
+
+@media all and (max-width: 560px) {
+    header {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding: 0 0 0 10px;  
+    }
+}
+
+@media all and (max-width: 480px) {
+    .wrapper {
+        padding: 20px 0;
+    }
+
+    .header_logo img {
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .input_title {
+        font-size: 24px;
+    }
+
+    .input_box p {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .budget_title {
+        font-size: 16px;
+    }
+
+    .budget_number {
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 200px;
+    }
+
+    footer button {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 24px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .header_logo img {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}

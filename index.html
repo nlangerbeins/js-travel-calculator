@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header_logo">
+          <img src="/assets/img/logo.png" alt="logo" />
+        </div>
+        <h1>Travel Calculator</h1>
+      </header>
+      <main>
+        <div class="section_total">
+          <p class="input_title">Total Trip Allowance:</p>
+          <div class="input_box">
+            <p>Amount Saved for Trip:</p>
+            <input
+              id="budgetTotal"
+              class="input"
+              type="text"
+              placeholder="$"
+              autofocus
+              onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            />
+          </div>
+        </div>
+        <div class="section_travel">
+          <p class="input_title">Travel Expenses:</p>
+          <div class="input_box">
+            <p>Number of Travelers:</p>
+            <input
+              id="peopleNumberTravel"
+              class="input"
+              type="text"
+              placeholder="#"
+              onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            />
+          </div>
+          <div class="input_container">
+            <div class="input_box container_box">
+              <p>Airline Tickets:</p>
+              <input
+                id="airlineTickets"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Baggage Fees:</p>
+              <input
+                id="baggageFees"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Pet/Childcare:</p>
+              <input
+                id="petChildcare"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Travel Insurance:</p>
+              <input
+                id="insurance"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="section_travel">
+          <p class="input_title">Lodging:</p>
+          <div class="input_container">
+            <div class="input_box container_box">
+              <p>Number of Nights:</p>
+              <input
+                id="nightsNumber"
+                class="input"
+                type="text"
+                placeholder="#"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Cost per Room:</p>
+              <input id="roomCost" class="input" type="text" placeholder="$" />
+            </div>
+          </div>
+        </div>
+        <div class="section_travel">
+          <p class="input_title">Food & Drink Expenses:</p>
+          <div class="input_box">
+            <p>Number of Travelers:</p>
+            <input
+              id="peopleNumberFood"
+              class="input"
+              type="text"
+              placeholder="#"
+              onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            />
+          </div>
+          <div class="input_container">
+            <div class="input_box container_box">
+              <p>Number of Meals per Day:</p>
+              <input
+                id="mealsNumber"
+                class="input"
+                type="text"
+                placeholder="#"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Number of Days:</p>
+              <input
+                id="daysNumber"
+                class="input"
+                type="text"
+                placeholder="#"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Cost per Meal:</p>
+              <input
+                id="mealCost"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="section_travel">
+          <p class="input_title">Extras / Activities:</p>
+          <div class="input_box">
+            <p>Number of Travelers:</p>
+            <input
+              id="peopleNumberActivity"
+              class="input"
+              type="text"
+              placeholder="#"
+              onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            />
+          </div>
+          <div class="input_container">
+            <div class="input_box container_box">
+              <p>Guided Tours:</p>
+              <input
+                id="toursCost"
+                class="input"
+                type="text"
+                placeholder="$"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+              />
+            </div>
+            <div class="input_box container_box">
+              <p>Entertainment:</p>
+              <input
+                id="entertainmentCost"
+                class="input"
+                type="text"
+                placeholder="$"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="section_budget">
+          <div class="budget_total">
+            <p class="budget_title">Total Available for Vacation</p>
+            <p class="budget_number">$ <span id="budgetTotalTwo">0</span></p>
+          </div>
+          <div class="budget_total">
+            <p class="budget_title">Total Expected Expenses</p>
+            <p class="budget_number">$ <span id="budgetExpected">0</span></p>
+          </div>
+          <div class="budget_difference">
+            <p class="budget_title">Under/Over Budget</p>
+            <p class="budget_number">$ <span id="budgetDifference">0</span></p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <button id="resetButton">
+        <img src="/assets/img/reset.png" alt="icon" />
+        <span>Reset</span>
+      </button>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
