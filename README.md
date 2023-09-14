@@ -1,4 +1,4 @@
-# Travel calculator
+# Travel Calculator
 
 ![cover](./assets/img/mockup.png)
 
